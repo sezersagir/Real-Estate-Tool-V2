@@ -109,26 +109,6 @@ python app.py
 
 Browser öffnen: http://localhost:5000
 
-### Deployment (Railway)
-
-1. GitHub Repo erstellen, Code pushen
-2. railway.app → New Project → Deploy from GitHub
-3. Variable setzen: `GROQ_API_KEY`
-4. Builder: Nixpacks oder Dockerfile
-5. Networking → Generate Domain
-
-### Daten aktualisieren
-
-```bash
-python run_collector.py
-git add real_estate.db
-git commit -m "daten aktualisiert"
-git push
-```
-
-Railway deployt automatisch neu.
-
-## Eingabefelder
 
 **Pflichtfelder:**
 - PLZ / Stadtteil (Dropdown, 14 Optionen)
